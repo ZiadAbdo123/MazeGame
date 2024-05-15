@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+        <title>Starburst</title>
+    </head>
+    <body>
+        <a-scene>
+            <!-- Set the background color -->
+            <a-sky color="black"></a-sky>
+
+            <!-- Scoot the camera back to see all of the
+                balls at once -->
+
+            <!-- Red Sphere -->
+            <a-sphere radius="0.5" color="red" position="0 0 -10"
+                animation="
+                property: position;
+                from: 0 0 -10;
+                to: -20 20 -15;
+                loop: true;
+                "
+            ></a-sphere>
+
+            <!-- Orange Sphere -->
+            <a-sphere radius="0.5" color="orange" position="0 0 -10"
+                animation="
+                property: position;
+                from: 0 0 -10;
+                to: -16 20 -15;
+                loop: true;
+                dur: 3000;
+                "
+                ></a-sphere>
+
+            <!-- Yellow Sphere -->
+            <a-sphere radius="0.5" color="yellow" position="0 0 -10"
+                animation="
+                property: position;
+                from: 0 0 -10;
+                to: 0 20 -15;
+                loop: 10;
+                dur: 3000;
+                "
+            ></a-sphere>
+
+            <!-- Green Sphere -->
+            <a-sphere radius="0.5" color="green" position="0 0 -10"
+                animation="
+                property: position;
+                from: 0 0 -10;
+                to: 16 20 -15;
+                loop: 10;
+
+                dur: 3000;
+                "
+            ></a-sphere>
+
+            <!-- Blue Sphere -->
+            <a-sphere radius="0.5" color="blue" position="0 0 -10"
+                animation="
+                property: position;
+                from: 0 0 -10;
+                to: 20 20 -15;
+                loop: true;
+                dur: 3000;
+                dir: alternate;
+                "
+            ></a-sphere>
+
+            <!-- Purple Sphere -->
+             <a-sphere radius="0.5" color="purple" position="0 0 -10"
+                animation="
+                property: position;
+                from: 0 0 -30;
+                to: 25 20 -15;
+                loop: 10;
+                dur: 2500;
+                "
+             ></a-sphere>
+
+        </a-scene>
+    </body>
+</html>
