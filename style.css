@@ -5,7 +5,6 @@ body {
 }
 
 .heading {
-  padding-top: 30px;
   font-size: 100px;
   color: purple;
 
@@ -25,7 +24,7 @@ body {
 }
 
 .logo {
-  width: 300px;
-  height: 300px;
-  padding-top: 50px;
+  width: 150px;
+  height: 150px;
+  padding-top: 5px;
 }
