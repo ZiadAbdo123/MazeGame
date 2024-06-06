@@ -2,12 +2,13 @@ body {
   background-image: url("BackgroundMaze.png");
   background-size: cover;
   text-align: center;
+  font-family: "Grand Hotel", cursive;
 }
+
 
 .heading {
   font-size: 100px;
   color: purple;
-
 }
 
 .buttonPlay {
