@@ -8,19 +8,23 @@
         <a-scene>
             <!-- Set the background color -->
             <a-sky color="lightblue"></a-sky>
-            <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
+
+            <!-- Floor -->
+            <a-plane id="startRoomFloor" position="0 0 -2" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
 
               <!-- Back Wall -->
-              <a-plane position="0 2.5 -5" rotation="0 0 0" width="10" height="5" color="#AAA"></a-plane>
+              <a-plane id="startRoomBackWall" position="0 2.5 -7" rotation="0 0 0" width="10" height="5" color="#AAA"></a-plane>
 
               <!-- Front Wall -->
-              <a-plane position="0 2.5 5" rotation="0 180 0" width="10" height="5" color="#AAA"></a-plane>
+              <a-plane id="startRoomFrontWall" position="0 2.5 3" rotation="0 180 0" width="10" height="5" color="#AAA"></a-plane>
 
               <!-- Left Wall -->
-              <a-plane position="-5 2.5 0" rotation="0 90 0" width="10" height="5" color="#AAA"></a-plane>
+              <a-plane id="startRoomLeftWall" position="-5 2.5 -2" rotation="0 90 0" width="10" height="5" color="#AAA"></a-plane>
 
               <!-- Right Wall -->
-              <a-plane position="5 2.5 0" rotation="0 -90 0" width="10" height="5" color="#AAA"></a-plane>
+              <a-plane id="startRoomRightWall" position="5 2.5 -2" rotation="0 -90 0" width="10" height="5" color="#AAA"></a-plane>
+
+            <a-box id="startRoomWelcomeWall" position="0 2.5 -4" rotation="0 180 0" width="10" height="5" color="red" scale="0.300 1 1"></a-box>
 
 
 
