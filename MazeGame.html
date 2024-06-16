@@ -2,7 +2,7 @@
 <html>
     <head>
         <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-        <title>Starburst</title>
+        <title>Maze Game</title>
     </head>
     <body>
         <a-scene>
@@ -13,18 +13,24 @@
             <a-plane id="startRoomFloor" position="0 0 -2" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
 
               <!-- Back Wall -->
-              <a-plane id="startRoomBackWall" position="0 2.5 -7" rotation="0 0 0" width="10" height="5" color="#AAA"></a-plane>
+              <a-box id="startRoomBackWall" position="0 2.5 -7" rotation="0 0 0" width="10" height="5" color="#AAA"></a-box>
 
               <!-- Front Wall -->
-              <a-plane id="startRoomFrontWall" position="0 2.5 3" rotation="0 180 0" width="10" height="5" color="#AAA"></a-plane>
+              <a-box id="startRoomFrontWall" position="0 2.5 3" rotation="0 180 0" width="10" height="5" color="#AAA"></a-box>
 
               <!-- Left Wall -->
-              <a-plane id="startRoomLeftWall" position="-5 2.5 -2" rotation="0 90 0" width="10" height="5" color="#AAA"></a-plane>
+              <a-box id="startRoomLeftWall" position="-5 2.5 -2" rotation="0 90 0" width="10" height="5" color="#AAA"></a-box>
 
               <!-- Right Wall -->
-              <a-plane id="startRoomRightWall" position="5 2.5 -2" rotation="0 -90 0" width="10" height="5" color="#AAA"></a-plane>
+              <a-box id="startRoomRightWall" position="5 2.5 -2" rotation="0 -90 0" width="10" height="5" color="#AAA"></a-box>
 
             <a-box id="startRoomWelcomeWall" position="0 2.5 -4" rotation="0 180 0" width="10" height="5" color="red" scale="0.300 1 1"></a-box>
+
+            <a-box id="mazeFrameBackWall" position="0 2.5 -4" rotation="0 180 0" width="10" height="5" color="red" scale="0.300 1 1"></a-box>
+            <a-box id="mazeFrammFrontWall" position="0 2.5 -4" rotation="0 180 0" width="10" height="5" color="red" scale="0.300 1 1"></a-box>
+            <a-box id="mazeFrameLeftWall" position="0 2.5 -4" rotation="0 180 0" width="10" height="5" color="red" scale="0.300 1 1"></a-box>
+            <a-box id="mazeFrameRightWall" position="0 2.5 -4" rotation="0 180 0" width="10" height="5" color="red" scale="0.300 1 1"></a-box>
+
 
 
 
