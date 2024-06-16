@@ -9,37 +9,63 @@
             <!-- Set the background color -->
             <a-sky color="lightblue"></a-sky>
 
-            <!-- Floor -->
+            <!-- Start Room Floor -->
             <a-plane id="startRoomFloor" position="0 0 -2" rotation="-90 0 0" width="10" height="10" color="#7BC8A4" scale="1 1.1 0.500"></a-plane>
 
-              <!-- Back Wall -->
-              <a-box id="startRoomBaclWall" position="0 2.5 3" rotation="0 180 0" width="10" height="5" color="#AAA" scale="1 1 0.500"></a-box>
+              <!-- Start Room Back Wall -->
+              <a-box id="startRoomBacklWall" position="0 2.5 3" rotation="0 180 0" width="10" height="5" color="#AAA" scale="1 1 0.500"></a-box>
               
 
-              <!-- Front Wall -->
+              <!-- Start Room Front Walls -->
             <a-box id="startRoomFrontWall1" position="0 3.750 -7" rotation="0 0 0" width="10" height="5" color="#AAA" scale="1 0.5 0.500"></a-box>
             <a-box id="startRoomFrontWall2" position="4 2.5 -7" rotation="0 0 0" width="10" height="5" color="#AAA" scale="0.2 1 0.500"></a-box>
             <a-box id="startRoomFrontWall3" position="-4 2.5 -7" rotation="0 0 0" width="10" height="5" color="#AAA" scale="0.2 1 0.500"></a-box>
             <a-box id="startRoomFrontWall4" position="0 2.5 -7" rotation="0 0 0" width="10" height="5" color="#AAA" scale="0.3 1 0.500"></a-box>
 
-              <!-- Left Wall -->
+              <!-- Start Room Left Wall -->
               <a-box id="startRoomLeftWall" position="-5 2.5 -2" rotation="0 90 0" width="10" height="5" color="#AAA" scale="1 1 0.500"></a-box>
 
-              <!-- Right Wall -->
+              <!-- Start Room Right Wall -->
               <a-box id="startRoomRightWall" position="5 2.5 -2" rotation="0 -90 0" width="10" height="5" color="#AAA" scale="1 1 0.500"></a-box>
-
-            <a-box id="startRoomWelcomeWall" position="0 2.5 -4" rotation="0 180 0" width="10" height="5" color="red" scale="0.300 1 1"></a-box>
-
-            <a-box id="mazeFrameBackWall1" position="10 2.5 -7" rotation="0 180 0" width="10" height="5" color="blue" scale="1 1 0.5"></a-box>
             
+              <!-- Start Room Welcome Wall -->
+            <a-box id="startRoomWelcomeWall" position="0 2.5 -4" rotation="0 180 0" width="10" height="5" color="red" scale="0.300 1 0.25"></a-box>
+              
+            <!-- Maze Room Back Walls -->
+            <a-box id="mazeFrameBackWall1" position="10 2.5 -7" rotation="0 180 0" width="10" height="5" color="blue" scale="1 1 0.5"></a-box>
             <a-box id="mazeFrammBackWall2" position="-10 2.5 -7" rotation="0 180 0" width="10" height="5" color="blue" scale="1 1 0.5"></a-box>
+            
+            <!-- Maze Room Left Wall -->
             <a-box id="mazeFrameLeftWall" position="-14.750 2.5 -24.5" rotation="0 90 0" width="10" height="5" color="blue" scale="3.5 1 0.5"></a-box>
+            
+            <!-- Maze Room Right Wall -->
             <a-box id="mazeFrameRightWall" position="14.750 2.5 -24.5" rotation="0 90 0" width="10" height="5" color="blue" scale="3.5 1 0.5"></a-box>
-            <a-box id="mazeFrameFrontWall" position="0 2.5 -41.745" rotation="0 180 0" width="10" height="5" color="blue" scale="3 1 0.5"></a-box>
+            
+            <!-- Maze Room Front Walls -->
+            <a-box id="mazeFrameFrontWall" position="10 2.5 -41.745" rotation="0 180 0" width="10" height="5" color="blue" scale="1 1 0.5"></a-box>
+            <a-box id="mazeFrammBackWall2" position="-10 2.5 -41.745" rotation="0 180 0" width="10" height="5" color="blue" scale="1 1 0.5"></a-box>
 
+            <!-- Maze Room Floors -->
         <a-plane id="MazeRoomFloor1" position="0 0 -14.744" rotation="-90 0 0" width="10" height="10" color="#7BC8A4" scale="3 1.5 0.500"></a-plane>
         <a-plane id="MazeRoomFloor2" position="0 0 -31.974" rotation="-90 0 0" width="10" height="10" color="#7BC8A4" scale="3 2 0.500"></a-plane>
 
+            <!-- End Room Floor -->
+            <a-plane id="endRoomFloor" position="0 0 -46.500" rotation="-90 0 0" width="10" height="10" color="#7BC8A4" scale="1 1.1 0.500"></a-plane>
+
+            <!-- End Room Front Walls -->
+            <a-box id="endRoomFrontWall1" position="0 3.750 -41.745" rotation="0 0 0" width="10" height="5" color="#AAA" scale="1 0.5 0.500"></a-box>
+            <a-box id="endRoomFrontWall2" position="-3.000 2.5 -41.745" rotation="0 0 0" width="10" height="5" color="#AAA" scale="0.4 1 0.500"></a-box>
+            <a-box id="endRoomFrontWall3" position="3 2.5 -41.745" rotation="0 0 0" width="10" height="5" color="#AAA" scale="0.4 1 0.500"></a-box>
+            
+            <!-- End Room Back Wall -->
+            <a-box id="endRoomBacklWall" position="0 2.5 -51" rotation="0 180 0" width="10" height="5" color="#AAA" scale="1 1 0.500"></a-box>
+
+            <!-- End Room Left Wall -->
+            <a-box id="endRoomLeftWall" position="-5 2.5 -47" rotation="0 90 0" width="10" height="5" color="#AAA" scale="1 1 0.500"></a-box>
+
+            <!-- End Room Right Wall -->
+            <a-box id="endRoomRightWall" position="5 2.5 -47" rotation="0 -90 0" width="10" height="5" color="#AAA" scale="1 1 0.500"></a-box>
+        
         </a-scene>
     </body>
 </html>
