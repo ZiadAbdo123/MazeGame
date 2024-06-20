@@ -27,6 +27,20 @@
             
             <!-- Set the background color -->        
              <a-sky color="lightblue"></a-sky>
+
+            <a-light type="ambient" color="#445451"></a-light>
+
+            <!-- Directional Light -->
+            <a-light type="directional" color="#ffffff" intensity="0.8" position="-1 2 4"></a-light>
+
+            <!-- Point Light -->
+            <a-light type="point" color="#ff0000" intensity="1" distance="10" decay="2" position="2 4 4"></a-light>
+
+            <!-- Spot Light -->
+            <a-light type="spot" color="#00ff00" intensity="1" distance="15" angle="30" penumbra="1" position="5 10 5"></a-light>
+
+            <!-- Hemisphere Light -->
+            <a-light type="hemisphere" color="#ffffff" groundColor="#0000ff" intensity="0.6"></a-light>
   
             <a-gltf-model src="navMesh.gltf" postion="1 1 1" nav-mesh visible="false"></a-gltf-model>
             <!-- Start Room Floor -->
@@ -53,16 +67,16 @@
               
             <!-- Maze Room Back Walls -->
             <a-box id="mazeFrameBackWall1" position="10 2.5 -7" rotation="0 180 0" width="10" height="5" color="blue" scale="1 1 0.5"></a-box>
-            <a-box id="mazeFrammBackWall2" position="-10 2.5 -7" rotation="0 180 0" width="10" height="5" color="AAA" scale="1 1 0.5"></a-box>
+            <a-box id="mazeFrammBackWall2" position="-10 2.5 -7" rotation="0 180 0" width="10" height="5" color="#AAA" scale="1 1 0.5"></a-box>
             
             <!-- Maze Room Left Wall -->
-            <a-box id="mazeFrameLeftWall" position="-14.750 2.5 -24.5" rotation="0 90 0" width="10" height="5" color="AAA" scale="3.5 1 0.5"></a-box>
+            <a-box id="mazeFrameLeftWall" position="-14.750 2.5 -24.5" rotation="0 90 0" width="10" height="5" color="#AAA" scale="3.5 1 0.5"></a-box>
             
             <!-- Maze Room Right Wall -->
-            <a-box id="mazeFrameRightWall" position="14.750 2.5 -24.5" rotation="0 90 0" width="10" height="5" color="AAA" scale="3.5 1 0.5"></a-box>
+            <a-box id="mazeFrameRightWall" position="14.750 2.5 -24.5" rotation="0 90 0" width="10" height="5" color="#AAA" scale="3.5 1 0.5"></a-box>
             
             <!-- Maze Room Front Walls -->
-            <a-box id="mazeFrameFrontWall" position="10 2.5 -41.745" rotation="0 180 0" width="10" height="5" color="AAA" scale="1 1 0.5"></a-box>
+            <a-box id="mazeFrameFrontWall" position="10 2.5 -41.745" rotation="0 180 0" width="10" height="5" color="#AAA" scale="1 1 0.5"></a-box>
             <a-box id="mazeFrammBackWall2" position="-10 2.5 -41.745" rotation="0 180 0" width="10" height="5" color="AAA" scale="1 1 0.5"></a-box>
 
             <!-- Maze Room Floors -->
